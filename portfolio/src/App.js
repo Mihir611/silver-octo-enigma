@@ -5,9 +5,13 @@ import {
   Route,
 } from "react-router-dom";
 import GlobalStyle from './globalStyles'
-import Home from './components/home/home';
+import Main from './components/Main';
+import About from './components/AboutPage';
+import Blog from './components/BlogPage';
+import Work from './components/WorkPage';
+import Skills from './components/MySkillsPage';
 import { ThemeProvider } from 'styled-components';
-import { lightTheme } from './components/Themes';
+import { darkTheme, lightTheme } from './components/Themes';
 
 function App() {
   // return (
@@ -22,7 +26,15 @@ function App() {
   return <>
     <GlobalStyle />
     <ThemeProvider theme={lightTheme}>
-      app file
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Main />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/blog" element={<Blog />} />
+          <Route exact path="/work" element={<Work />} />
+          <Route exact path="/skills" element={<Skills />} />
+        </Routes>
+      </Router>
     </ThemeProvider>
   </>
 }
