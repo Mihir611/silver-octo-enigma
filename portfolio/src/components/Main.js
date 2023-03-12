@@ -4,7 +4,8 @@ import LogoComponent from "./subComponents/LogoComponent";
 import PowerButton from "./subComponents/PowerButton";
 import SocialIcons from "./subComponents/SocialIcons";
 import { NavLink } from 'react-router-dom';
-import { YinYang } from "./AllSvg"
+import { YinYang } from "./AllSvg";
+import Introduction from "./Introduction";
 
 const MainContainer = styled.div`
     background: ${props => props.theme.body};
@@ -131,12 +132,12 @@ const Main = () => {
             <DarkDiv click={click} />
             <Container>
                 <PowerButton />
-                <LogoComponent />
-                <SocialIcons />
+                <LogoComponent theme={click ? 'dark' : 'light'} />
+                <SocialIcons theme={click ? 'dark' : 'light'} />
 
                 <Center click={click}>
                     <YinYang onClick={() => handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill='currentColor' />
-                    <span>click here</span> 
+                    <span>Click Here</span> 
                 </Center>
 
                 <Contact target="_blank" to="mailto:mihir17.udupa@gmail.com">
@@ -160,6 +161,7 @@ const Main = () => {
                     </Skills>
                 </BottomBar>
             </Container>
+            {click ? <Introduction click={click} /> : null}
         </MainContainer>
     )
 }

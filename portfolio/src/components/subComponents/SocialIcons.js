@@ -23,7 +23,7 @@ const Icons = styled.div`
 const Line = styled.span`
     width: 2px;
     height: 8rem;
-    background-color: ${props => props.theme.text};
+    background-color: ${props => props.color === "dark" ? darkTheme.text : darkTheme.body};
 `
 
 const SocialIcons = (props) => {
@@ -49,7 +49,7 @@ const SocialIcons = (props) => {
                     <YouTube width={25} height={25} fill={props.theme === "dark" ? darkTheme.text : darkTheme.body} />
                 </NavLink>
             </div>
-            <Line />
+            <Line color={props.theme} />
         </Icons>
     )
 }
