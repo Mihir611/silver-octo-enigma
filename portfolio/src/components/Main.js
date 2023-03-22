@@ -70,7 +70,7 @@ const About = styled(NavLink)`
     z-index: 1;
 `
 
-const Skills = styled.div`
+const Skills = styled(NavLink)`
     color: ${props => props.theme.text};
     text-decoration: none;
     z-index: 1;

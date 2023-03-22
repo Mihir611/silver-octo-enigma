@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import img from "../assets/Images/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg"
 import BlogComponent from "./BlogComponent";
@@ -6,6 +6,7 @@ import LogoComponent from "./subComponents/LogoComponent";
 import PowerButton from "./subComponents/PowerButton";
 import SocialIcons from "./subComponents/SocialIcons";
 import { Blogs } from "../data/BlogData";
+import AnchorComponent from "./subComponents/Anchor";
 
 const MainContainer = styled.div`
     background-image: url(${img});
@@ -38,12 +39,20 @@ const Grid = styled.div`
 `
 
 const BlogPage = () => {
+    const [number, setNumber] = useState(0);
+
+    useEffect(() => {
+        let num = (window.innerHeight -70) / 30;
+        setNumber(parseInt(num));
+    }, []);
+
     return (
         <MainContainer>
             <Container>
                 <LogoComponent />
                 <PowerButton />
                 <SocialIcons />
+                <AnchorComponent numbers={number} />
                 <Center>
                     <Grid>
                         {
