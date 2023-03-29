@@ -11,9 +11,10 @@ const Slider = styled.div`
     top: 0;
     right: 2rem;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    transform: translateY(-50%);
+    transform: translateY(-100%);
 
     .chain {
         transform: rotate(135deg);
