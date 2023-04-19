@@ -54,7 +54,7 @@ const Text = styled.div`
   justify-content: space-evenly;
   & > *:last-child {
     color: ${(props) => `rgba(${props.theme.bodyRgba},0.6)`};
-    font-size: calc(0.3rem + 1.5vw);
+    font-size: calc(0.3rem + 1.2vw);
     font-weight: 300;
   }
 `;
@@ -70,7 +70,7 @@ const Introduction = () => {
                 <Text>
                     <h1>Hi,</h1>
                     <h3>I'm Mihir Udupa.</h3>
-                    <h6>I design and Code simple yet beautiful websites.</h6>
+                    <h6>I specialize in creating responsive and visually appealing user interfaces for web and mobile applications.</h6>
                 </Text>
             </SubBox>
             <SubBox>

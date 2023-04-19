@@ -66,16 +66,16 @@ const AboutPage = () => {
                     <img src={astronaunt} alt="spaceman"></img>
                 </Spaceman>
                 <Main>
-                    I'm a front-end developer located in India. I love to create simple
-                    yet beautiful websites with great user experience.
+                    I'm a front-end developer located in India. I specialize in creating responsive and 
+                    visually appealing user interfaces for web and mobile applications.
                     <br />
                     <br />
-                    I'm interested in the whole frontend stack Like trying new things and
-                    building great projects. I'm an independent freelancer and blogger. I
-                    love to write blogs and read books.
+                    I have a strong command of HTML, CSS, and JavaScript, as well as experience with popular 
+                    frontend frameworks such Svelte and libraries such as React. My goal is to create seamless user 
+                    experiences that not only meet but exceed client expectations.
                     <br />
                     <br />I believe everything is an Art when you put your consciousness
-                    in it. You can connect with me via social links.
+                    in it. Check out my portfolio to see some of my recent projects and get in touch to discuss how I can bring your ideas to life.
                 </Main>
                 <BigTitle text="ABOUT" top="10%" left="5%" />
             </Box>
