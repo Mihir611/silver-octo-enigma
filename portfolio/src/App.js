@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
+  useLocation,
 } from "react-router-dom";
 import GlobalStyle from './globalStyles'
 // import Main from './components/Main';
@@ -15,15 +16,6 @@ import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from './components/Themes';
 
 function App() {
-  // return (
-  //   <div className='App'>
-  //     <Router>
-  //       <Routes>
-  //         <Route path="/" element={<Home/>}></Route>
-  //       </Routes>
-  //     </Router>
-  //   </div>
-  // );
   return (
     <>
       <GlobalStyle />
